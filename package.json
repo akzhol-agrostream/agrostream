@@ -6,7 +6,11 @@
   "repository": "https://github.com/askart/agrostream.git",
   "author": "askart <askart@gmail.com>",
   "private": true,
-  "dependencies": {
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
     "vuepress": "1.0.3"
   }
 }
