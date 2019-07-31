@@ -1,0 +1,12 @@
+{
+  "name": "agrostream",
+  "description": "Landing page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/askart/agrostream.git",
+  "author": "askart <askart@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "vuepress": "1.0.3"
+  }
+}
