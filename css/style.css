@@ -5,42 +5,54 @@
 
 }
 .section1 {
-  height: 972px;
+  height: 970px;
   background-image: url("../img/bg1.jpg");
 }
 .section2 {
-
+  height: 740px;
+  background-color: #f4f4f4;
 }
 .section3 {
-
+  height: 440px;
+  background-color: #fff;
 }
 .section4 {
-
+  height: 980px;
+  background-color: #f4f4f4;
 }
 .section5 {
-
+  height: 590px;
+  background-color: #fff;
 }
 .section6 {
-
+  height: 490px;
+  background-color: #353535;
 }
 .section7 {
-
+  height: 750px;
+  background-color: #fff;
 }
 .section8 {
-
+  height: 1151px;
+  background-image: url("../img/laptop_fullscreen.jpg");
 }
 .section9 {
-
+  height: 1250px;
+  background-color: #fff;
 }
 .section10 {
-
+  height: 993px;
+  background-image: url("../img/bg2.jpg");
 }
 .section11 {
-
+  height: 990px;
+  background-color: #f4f4f4;
 }
 .section12 {
-
+  height: 370px;
+  background-color: #fff;
 }
 .footer {
-
+  height: 425px;
+  background-color: #353535;
 }
