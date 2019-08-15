@@ -24,20 +24,79 @@ html, body {
   min-width: 1900px;
   max-width: 1920px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 
 /* container */
 .container {
   width: inherit;
+  max-width: inherit;
 }
 
 
 /* navigation bar */
 header.header {
-
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: inherit;
+  max-width: inherit;
 }
-
+nav.nav {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 200px);
+  padding: 50px 0 10px;
+}
+.logo {
+  height: 44px;
+  width: 133px;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+ul.menu {
+  flex: 0 1 auto;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.menu li {
+  flex: 0 1 auto;
+  display: flex;
+}
+ul.menu li:not(:first-child)::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin: auto 20px;
+  background-color: #fba320;
+}
+ul.menu li a {
+  font-family: "Oswald Regular";
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul.menu li a:hover {
+  color: #fab320;
+}
+ul.menu li a.active {
+  color: #fab320;
+}
+.phone {
+  font-family: "Oswald Regular";
+  font-size: 20px;
+}
 
 /* first view */
 .section1 {
@@ -46,6 +105,23 @@ header.header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  flex: 0 1 auto;
+  align-self: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 450px;
+  line-height: 1.2;
+  margin-top: 270px;
+}
+.main .h1 {
+  font-size: 50px
+}
+.main .description {
+  color: #c8c8c8;
 }
 
 
@@ -213,12 +289,6 @@ footer.footer {
   color: #353535;
   text-transform: uppercase;
 }
-.h1-white {
-  font-family: "Oswald Regular";
-  font-size: 40px;
-  color: #fff;
-  text-transform: uppercase;
-}
 
 /* description */
 .description {
@@ -256,4 +326,8 @@ hr.separator {
 }
 .btn:hover, btn:focus {
   background-color: #f1a608;
+}
+
+.white {
+  color: #fff;
 }
