@@ -1,3 +1,13 @@
+/* fonts */
+@font-face {
+  font-family: "Oswald Light";
+  src:url("../fonts/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: "Oswald Regular";
+  src:url("../fonts/Oswald-Regular.ttf");
+}
+
 html, body {
   width: 100%;
 }
@@ -33,6 +43,8 @@ header.header {
 .section3 {
   height: 440px;
   background-color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 /* about */
@@ -45,18 +57,24 @@ header.header {
 .section5 {
   height: 590px;
   background-color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 /* partners */
 .section6 {
   height: 490px;
   background-color: #353535;
+  display: flex;
+  flex-flow: column;
 }
 
 /* achievements */
 .section7 {
   height: 750px;
   background-color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 /* interface */
@@ -72,6 +90,8 @@ header.header {
 .section9 {
   height: 1250px;
   background-color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 /* form */
@@ -87,12 +107,16 @@ header.header {
 .section11 {
   height: 990px;
   background-color: #f4f4f4;
+  display: flex;
+  flex-flow: column;
 }
 
 /* contacts */
 .section12 {
   height: 370px;
   background-color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 /* footer */
@@ -108,15 +132,37 @@ footer.footer {
 }
 
 /* headers */
-.h2 {
-  color: #000;
+.h1 {
+  font-family: "Oswald Regular";
+  font-size: 40px;
+  color: #353535;
+  text-transform: uppercase;
 }
-.h2-white {
+.h1-white {
+  font-family: "Oswald Regular";
+  font-size: 40px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 /* description */
 .description {
   flex: 0 1 auto;
   align-self: center;
+  font-family: "Oswald Light";
+  font-size: 20px;
+  color: #353535;
+}
+
+/* separator */
+hr.separator {
+  flex: 0 1 auto;
+  align-self: center;
+  display: block;
+  width: 170px;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #fab320;
+  margin: 0 0 20px;
+  padding: 0;
 }
