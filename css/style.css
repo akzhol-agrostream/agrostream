@@ -1,58 +1,122 @@
+html, body {
+  width: 100%;
+}
+
+/* container */
 .container {
+  width: inherit;
+}
+
+/* navigation bar */
+header.header {
 
 }
-.header {
 
-}
+/* first view */
 .section1 {
   height: 970px;
   background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+/* modules */
 .section2 {
   height: 740px;
   background-color: #f4f4f4;
+  display: flex;
+  flex-flow: column;
 }
+
+/* result */
 .section3 {
   height: 440px;
   background-color: #fff;
 }
+
+/* about */
 .section4 {
   height: 980px;
   background-color: #f4f4f4;
 }
+
+/* feedback */
 .section5 {
   height: 590px;
   background-color: #fff;
 }
+
+/* partners */
 .section6 {
   height: 490px;
   background-color: #353535;
 }
+
+/* achievements */
 .section7 {
   height: 750px;
   background-color: #fff;
 }
+
+/* interface */
 .section8 {
   height: 1151px;
   background-image: url("../img/laptop_fullscreen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+/* services */
 .section9 {
   height: 1250px;
   background-color: #fff;
 }
+
+/* form */
 .section10 {
   height: 993px;
   background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+/* news */
 .section11 {
   height: 990px;
   background-color: #f4f4f4;
 }
+
+/* contacts */
 .section12 {
   height: 370px;
   background-color: #fff;
 }
-.footer {
+
+/* footer */
+footer.footer {
   height: 425px;
   background-color: #353535;
+}
+
+/* title */
+.title {
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+/* headers */
+.h2 {
+  color: #000;
+}
+.h2-white {
+  color: #fff;
+}
+
+/* description */
+.description {
+  flex: 0 1 auto;
+  align-self: center;
 }
