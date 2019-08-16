@@ -161,6 +161,20 @@ ul.menu li a.active {
   background-color: #fff;
   display: flex;
   flex-flow: column;
+  position: relative;
+}
+.section3::after {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 398px;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  background-image: url("../img/wheat_right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .results {
   flex: 0 1 auto;
