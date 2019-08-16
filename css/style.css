@@ -276,21 +276,87 @@ ul.menu li a.active {
 
 /* feedback */
 .section5 {
-  height: 590px;
+  height: 350px;
   background-color: #fff;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+}
+.feedback {
+  flex: 0 1 auto;
+  width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-top: 30px;
+}
+.feedback > .text {
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #323232;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+.feedback > .author {
+  font-size: 16px;
+  font-family: "OpenSans Bold";
 }
 
 
 /* partners */
 .section6 {
-  height: 490px;
-  background-color: #353535;
+  height: 390px;
+  background-color: #626363;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
 }
-
+.section6 .description {
+  color: #eaeaea;
+}
+.partners {
+  flex: 0 1 auto;
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  width: calc(100% - 900px);
+  align-items: center;
+}
+.partner {
+  flex: 0 1 auto;
+}
+.partner1 {
+  width: 108px;
+  height: 85px;
+  background-image: url("../img/partner1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.partner2 {
+  width: 159px;
+  height: 62px;
+  background-image: url("../img/partner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.partner3 {
+  width: 237px;
+  height: 47px;
+  background-image: url("../img/partner3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.partner4 {
+  width: 189px;
+  height: 56px;
+  background-image: url("../img/partner4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 /* achievements */
 .section7 {
@@ -351,10 +417,13 @@ ul.menu li a.active {
 /* footer */
 footer.footer {
   height: 425px;
-  background-color: #353535;
+  background-color: #626363;
 }
 
 
+.section6 .description {
+  color: #eaeaea;
+}
 /* title */
 .title {
   flex: 0 1 auto;
@@ -364,11 +433,12 @@ footer.footer {
 
 /* headers */
 .h1 {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Light";
   font-size: 30px;
   color: #353535;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 /* description */
@@ -389,7 +459,7 @@ hr.separator {
   height: 2px;
   border: 0;
   border-top: 2px solid #fab320;
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   padding: 0;
 }
 
