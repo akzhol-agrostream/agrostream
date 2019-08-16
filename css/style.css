@@ -238,7 +238,7 @@ ul.menu li a.active {
   flex-flow: column nowrap;
   width: calc(100% - 885px);
   background-color: #fff;
-  padding: 0 70px 0 40px;
+  padding: 0 90px 0 50px;
 }
 .text-and-image > .about > .title {
   margin-top: 10px;
@@ -249,7 +249,7 @@ ul.menu li a.active {
   font-family: "OpenSans Regular";
   font-size: 20px;
   color: #353535;
-  line-height: 1.1;
+  line-height: 22px;
 }
 .text-and-image > .about > .text .bold {
   font-family: "OpenSans Bold";
