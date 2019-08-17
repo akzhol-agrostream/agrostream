@@ -360,22 +360,72 @@ ul.menu li a.active {
 
 /* achievements */
 .section7 {
-  height: 750px;
+  height: 680px;
   background-color: #fff;
+  background-image: url("../img/world_map.png");
+  background-size: 762px 503px;
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 20px);
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+}
+.achievements {
+  flex: 0 1 auto;
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+  width: calc(100% - 1000px);
+  align-items: center;
+}
+.achievement {
+  flex: 0 1 auto;
+  text-align: center;
+}
+.achievement-value {
+  font-family: "OpenSans Bold";
+  font-size: 60px;
+  color: #e4ab3b;
+  margin-bottom: 20px;
+}
+.achievement-description {
+  font-family: "OpenSans Regular";
+  font-size: 20px;
 }
 
 
 /* interface */
 .section8 {
-  height: 1151px;
+  height: 960px;
   background-image: url("../img/laptop_fullscreen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  justify-content: flex-end;
 }
-
+.interface {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: calc(100% - 400px);
+  height: fit-content;
+}
+.interface > .logo {
+  margin-right: 100px;
+}
+.interface-text {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.interface-text > .title {
+  align-self: flex-start;
+}
+.interface-text > .description {
+  align-self: flex-start;
+}
 
 /* services */
 .section9 {
@@ -433,7 +483,7 @@ footer.footer {
 
 /* headers */
 .h1 {
-  font-family: "Oswald Light";
+  font-family: "Oswald Regular";
   font-size: 30px;
   color: #353535;
   text-transform: uppercase;
