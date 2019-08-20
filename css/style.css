@@ -98,6 +98,22 @@ ul.menu li a.active {
   color: #fab320;
 }
 .phone {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: space-between;
+}
+.phone > .icon {
+  flex: 0 1 auto;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.phone > .number {
+  flex: 0 1 auto;
   font-family: "Oswald Regular";
   font-size: 20px;
 }
@@ -524,6 +540,56 @@ ul.menu li a.active {
   background-color: #fff;
   display: flex;
   flex-flow: column nowrap;
+}
+.contacts {
+  flex: 0 1 auto;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 800px);
+  margin-top: 60px;
+}
+.contact {
+  flex: 0 1 auto;
+  width: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.contact > .phone {
+  flex: 0 1 auto;
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contact > .marker {
+  flex: 0 1 auto;
+  height: 33px;
+  width: 33px;
+  background-image: url("../img/marker.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contact > .mail {
+  flex: 0 1 auto;
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/mail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contact-text {
+  flex: 0 1 auto;
+  font-family: "OpenSans Regular";
+  font-size: 20px;
+  color: #353535;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
