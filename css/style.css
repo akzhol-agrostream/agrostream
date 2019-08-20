@@ -233,7 +233,7 @@ ul.menu li a.active {
 
 /* about */
 .section4 {
-  height: 980px;
+  height: 900px;
   background-color: #f4f4f4;
   display: flex;
   flex-flow: column nowrap;
@@ -252,6 +252,19 @@ ul.menu li a.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.section4 > .presentation {
+  width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 70px;
+}
+.presentation > .text {
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 40px;
 }
 .text-and-image {
   display: flex;
