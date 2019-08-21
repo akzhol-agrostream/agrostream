@@ -58,6 +58,10 @@ nav.nav {
   width: calc(100% - 200px);
   padding: 50px 0 10px;
 }
+.nav > a {
+  color: #fff;
+  text-decoration: none;
+}
 .logo {
   height: 39px;
   width: 123px;
@@ -700,9 +704,90 @@ ul.menu li a.active {
 
 /* footer */
 footer.footer {
-  height: 425px;
+  height: 280px;
   background-color: #626363;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px 0 25px;
 }
+.links-and-subscription {
+  flex: 0 1 auto;
+  width: calc(100% - 800px);
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  height: 120px;
+}
+.link {
+  flex: 0 1 auto;
+  margin: 0px 100px 20px 0px;
+}
+.link > a {
+  font-family: "OpenSans Regular";
+  font-size: 14px;
+  text-decoration: none;
+  color: #dcdddd;
+}
+.subscription {
+  width: 300px;
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subscription-form {
+  flex: 0 1 auto;
+  margin-bottom: 20px;
+}
+.subscription-form > form {
+  display: flex;
+}
+.subscription-form > form > input {
+  flex: 0 1 auto;
+  width: 250px;
+  display: block;
+  height: 30px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #c6c6c6;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 8px 5px;
+  vertical-align: middle;
+}
+.subscription-form > form > .btn {
+  flex: 0 1 auto;
+  display: inline-block;
+  border-radius: 0 3px 3px 0;
+  padding: 7px 10px;
+}
+.subscription-condition {
+  flex: 0 1 auto;
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 10px;
+  margin-bottom: 30px;
+  padding-left: 5px;
+}
+.subscription-description {
+  flex: 0 1 auto;
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.copyright {
+  width: calc(100% - 800px);
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 12px;
+}
+
 
 
 .section6 .description {
