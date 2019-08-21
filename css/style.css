@@ -120,7 +120,7 @@ ul.menu li a.active {
 
 /* first view */
 .section1 {
-  height: 970px;
+  height: 900px;
   background-image: url("../img/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,15 +133,19 @@ ul.menu li a.active {
   align-self: flex-start;
   display: flex;
   flex-flow: column nowrap;
-  width: 450px;
+  width: 650px;
   line-height: 1.2;
   margin-top: 270px;
+  text-align: center;
 }
 .main .h1 {
-  font-size: 40px
+  font-size: 40px;
+  text-transform: none;
 }
 .main .description {
-  color: #c8c8c8;
+  font-size: 20px;
+  color: #eee;
+  width: 300px;
 }
 
 
@@ -713,12 +717,11 @@ footer.footer {
 
 /* headers */
 .h1 {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Medium";
   font-size: 30px;
   color: #353535;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px;
 }
 
 /* description */
@@ -762,4 +765,8 @@ hr.separator {
 
 .white {
   color: #fff;
+}
+
+h1 {
+  font-weight: normal;
 }
