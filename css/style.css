@@ -154,22 +154,51 @@ ul.menu li a.active {
 
 /* modules */
 .section2 {
-  height: 500px;
   background-color: #f4f4f4;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 0 50px 0;
+  box-sizing: border-box;
 }
 .modules {
   flex: 0 1 auto;
   align-self: center;
   display: flex;
-  justify-content: space-between;
-  width: calc(100% - 500px);
-  margin-top: 60px;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: calc(100% - 250px * 2);
+  margin: 60px 0 0;
+}
+@media screen and (max-width: 1900px) {
+  .modules {
+    width: calc(100% - 150px * 2);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .modules {
+    width: calc(100% - 50px * 2);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .modules {
+    width: calc(100% - 5px * 2);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .modules {
+    width: calc(100% - 150px * 2);
+  }
+}
+@media screen and (max-width: 900px) {
+  .modules {
+    width: calc(100% - 80px * 2);
+  }
 }
 .module {
   flex: 0 1 auto;
   background-color: transparent;
+  width: 253px;
   padding: 50px 35px;
   box-sizing: border-box;
   border-bottom: 2px solid transparent;
@@ -472,7 +501,20 @@ ul.menu li a.active {
   flex-flow: column nowrap;
   align-items: center;
 }
-
+@media screen and (max-width: 1200px) {
+  .section8 {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px 0 40px;
+    background-image: none;
+    background-color: #626363;
+  }
+  .section8 > .title {
+    margin-top: 0;
+  }
+}
 
 /* services */
 .section9 {
@@ -846,7 +888,9 @@ footer.footer {
   font-family: "OpenSans Regular";
   font-size: 16px;
   color: #353535;
+  max-width: calc(100% - 50px);
 }
+
 
 /* separator */
 hr.separator {
