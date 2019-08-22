@@ -229,25 +229,28 @@ ul.menu li a.active {
   flex-flow: column nowrap;
   position: relative;
 }
-.section3::after {
-  content: "";
-  display: block;
-  width: 273px;
-  height: 398px;
-  position: absolute;
-  right: 0;
-  bottom: 30px;
-  background-image: url("../img/wheat_right.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (min-width: 1360px) {
+  .section3::after {
+    content: "";
+    display: block;
+    width: 273px;
+    height: 398px;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    background-image: url("../img/wheat_right.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 .results {
   flex: 0 1 auto;
   align-self: center;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  width: calc(100% - 700px);
+  width: calc(200px * 4 + 50px * 3);
   margin-top: 80px;
 }
 .result {
@@ -415,7 +418,8 @@ ul.menu li a.active {
   display: flex;
   margin-top: 80px;
   justify-content: space-between;
-  width: calc(100% - 900px);
+  flex-flow: row wrap;
+  width: calc(108px + 159px + 237px + 189px + 3 * 50px + 2 * 50px);
   align-items: center;
 }
 .partner {
@@ -471,7 +475,7 @@ ul.menu li a.active {
   display: flex;
   margin-top: 150px;
   justify-content: space-between;
-  width: calc(100% - 1000px);
+  width: calc(200px + 160px + 260px + 100px * 2);
   align-items: center;
 }
 .achievement {
@@ -518,7 +522,7 @@ ul.menu li a.active {
 
 /* services */
 .section9 {
-  height: 1000px;
+  height: auto;
   background-color: #fff;
   background-image: url("../img/steps_tree.png");
   background-size: 1291px 414px;
@@ -527,6 +531,25 @@ ul.menu li a.active {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 50px 0;
+}
+@media screen and (max-width: 1500px) {
+  .section9 {
+    background-color: #fff;
+    background-image: url("../img/steps_tree.png");
+    background-size: 1000px auto;
+    background-repeat: no-repeat;
+    background-position: center 215px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section9 {
+    background-image: none;
+  }
 }
 .services {
   display: grid;
@@ -537,39 +560,85 @@ ul.menu li a.active {
   grid-gap: 16px 7px;
   margin-top: 80px;
 }
+@media screen and (max-width: 1500px) {
+  .services {
+    grid-template-columns: 123px repeat(6, 165px);
+    grid-template-rows: 153px 100px 120px;
+    grid-template-areas: ". service1 . service3 . service5 ." ". . . . . . ." ". . service2 . service4 . service6";
+    grid-gap: 12px 5px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .services {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px 0;
+    box-sizing: border-box;
+  }
+}
 .service {
   display: flex;
   flex-flow: column nowrap;
   padding: 0 0 0 25px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1200px) {
+  .service {
+    padding: 0;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+  }
+}
 .service-number {
   font-family: "Oswald Medium";
   font-size: 30px;
   color: #00c16a;
+}
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .service-number {
+    font-size: 20px;
+  }
 }
 .service-description {
   font-family: "OpenSans Bold";
   font-size: 18px;
   margin-top: 15px;
 }
-.service1 {
-  grid-area: service1;
+@media screen and (max-width: 1200px) {
+  .service-description {
+    align-self: flex-end;
+    font-size: 18px;
+    margin-top: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
 }
-.service2 {
-  grid-area: service2;
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .service-description {
+    font-size: 14px;
+  }
 }
-.service3 {
-  grid-area: service3;
-}
-.service4 {
-  grid-area: service4;
-}
-.service5 {
-  grid-area: service5;
-}
-.service6 {
-  grid-area: service6;
+@media screen and (min-width: 1201px) {
+  .service1 {
+    grid-area: service1;
+  }
+  .service2 {
+    grid-area: service2;
+  }
+  .service3 {
+    grid-area: service3;
+  }
+  .service4 {
+    grid-area: service4;
+  }
+  .service5 {
+    grid-area: service5;
+  }
+  .service6 {
+    grid-area: service6;
+  }
 }
 .calculator {
   margin-top: 50px;
