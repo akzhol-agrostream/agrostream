@@ -25,7 +25,6 @@ html, body {
   width: 100%;
   line-height: 1;
   user-select: none;
-  min-width: 1900px;
   max-width: 1920px;
   margin: 0 auto;
   scroll-behavior: smooth;
@@ -241,25 +240,33 @@ ul.menu li a.active {
 
 /* about */
 .section4 {
-  height: 900px;
   background-color: #f4f4f4;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 0 50px 0;
 }
-.section4::before {
-  content: "";
-  display: block;
-  width: 245px;
-  height: 373px;
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  background-image: url("../img/wheat_left.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (max-width: 900px) {
+  .section4 {
+    padding: 0 0 30px 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section4::before {
+    content: "";
+    display: block;
+    width: 245px;
+    height: 373px;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    background-image: url("../img/wheat_left.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 .section4 > .presentation {
   width: 500px;
@@ -267,6 +274,11 @@ ul.menu li a.active {
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 70px;
+}
+@media screen and (max-width: 900px) {
+  .section4 > .presentation {
+    margin-top: 40px;
+  }
 }
 .presentation > .text {
   font-family: "OpenSans Regular";
@@ -279,13 +291,29 @@ ul.menu li a.active {
   width: calc(100% - 300px);
   margin-top: 75px;
 }
+@media screen and (max-width: 1200px) {
+  .text-and-image {
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .text-and-image {
+    width: calc(100% - 40px);
+  }
+}
 .text-and-image > .about {
   flex: 0 1 auto;
   display: flex;
   flex-flow: column nowrap;
-  width: calc(100% - 885px);
+  width: 100%;
   background-color: #fff;
-  padding: 0 90px 0 50px;
+  padding: 0 90px 30px 50px;
+}
+@media screen and (min-width: 1900px) {
+  .text-and-image > .about {
+    width: calc(100% - 885px);
+    padding: 0 90px 0 50px;
+  }
 }
 .text-and-image > .about > .title {
   margin-top: 10px;
@@ -301,14 +329,16 @@ ul.menu li a.active {
 .text-and-image > .about > .text .bold {
   font-family: "OpenSans Bold";
 }
-.text-and-image > .image {
-  flex: 0 1 auto;
-  width: 885px;
-  height: 588px;
-  background-image: url("../img/laptop_small.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (min-width: 1900px) {
+  .text-and-image > .image {
+    flex: 0 1 auto;
+    width: 885px;
+    height: 588px;
+    background-image: url("../img/laptop_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 /* feedback */
