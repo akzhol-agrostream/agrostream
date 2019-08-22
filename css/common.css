@@ -1,0 +1,308 @@
+/* fonts */
+@font-face {
+  font-family: "Oswald Light";
+  src:url("../fonts/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: "Oswald Regular";
+  src:url("../fonts/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald Medium";
+  src:url("../fonts/Oswald-Medium.ttf");
+}
+@font-face {
+  font-family: "OpenSans Bold";
+  src:url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans Regular";
+  src:url("../fonts/OpenSans-Regular.ttf");
+}
+
+
+html, body {
+  width: 100%;
+  line-height: 1;
+  user-select: none;
+  max-width: 1920px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+
+/* container */
+.container {
+  width: inherit;
+  max-width: inherit;
+}
+
+
+/* navigation bar */
+header.header {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: inherit;
+  max-width: inherit;
+}
+nav.nav {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 200px);
+  padding: 50px 0 10px;
+}
+@media screen and (max-width: 1200px) {
+  nav.nav {
+    width: calc(100% - 50px);
+    padding: 20px 0 0;
+  }
+}
+.nav > a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  height: 39px;
+  width: 123px;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+ul.menu {
+  flex: 0 1 auto;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 1100px) {
+  ul.menu {
+    display: none;
+  }
+}
+ul.menu li {
+  flex: 0 1 auto;
+  display: flex;
+}
+ul.menu li:not(:first-child)::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin: auto 20px;
+  background-color: #fba320;
+}
+ul.menu li a {
+  font-family: "Oswald Regular";
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul.menu li a:hover {
+  color: #fab320;
+}
+ul.menu li a.active {
+  color: #fab320;
+}
+.phone {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1300px) {
+  nav .phone {
+    display: none;
+  }
+}
+.phone > .icon {
+  flex: 0 1 auto;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.phone > .number {
+  flex: 0 1 auto;
+  font-family: "Oswald Regular";
+  font-size: 20px;
+}
+
+
+/* footer */
+footer.footer {
+  height: auto;
+  background-color: #626363;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px 0 25px;
+}
+.links-and-subscription {
+  flex: 0 1 auto;
+  max-width: 1100px;
+  width: calc(100% - 50px * 2);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1100px) {
+  .links-and-subscription {
+    flex-flow: column nowrap;
+  }
+}
+.links {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  height: 120px;
+}
+.link {
+  flex: 0 1 auto;
+  margin: 0px 100px 20px 0px;
+}
+@media screen and (max-width: 900px) {
+  .link {
+    flex: 0 1 auto;
+    margin: 0px 50px 20px 0px;
+  }
+}
+.link > a {
+  font-family: "OpenSans Regular";
+  font-size: 14px;
+  text-decoration: none;
+  color: #dcdddd;
+}
+.subscription {
+  width: 300px;
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subscription-form {
+  flex: 0 1 auto;
+  margin-bottom: 20px;
+}
+.subscription-form > form {
+  display: flex;
+}
+.subscription-form > form > input {
+  flex: 0 1 auto;
+  width: 250px;
+  display: block;
+  height: 30px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #c6c6c6;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 8px 5px;
+  vertical-align: middle;
+}
+.subscription-form > form > .btn {
+  flex: 0 1 auto;
+  display: inline-block;
+  border-radius: 0 3px 3px 0;
+  padding: 7px 10px;
+}
+.subscription-condition {
+  flex: 0 1 auto;
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 10px;
+  margin-bottom: 30px;
+  padding-left: 5px;
+}
+.subscription-description {
+  flex: 0 1 auto;
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.copyright {
+  width: calc(100% - 800px);
+  font-family: "OpenSans Regular";
+  color: #dcdddd;
+  font-size: 12px;
+  max-width: 1100px;
+  width: calc(100% - 50px * 2);
+}
+
+
+/* title */
+.title {
+  flex: 0 1 auto;
+  align-self: center;
+  margin-top: 25px;
+}
+
+/* headers */
+.h1 {
+  font-family: "Oswald Medium";
+  font-size: 30px;
+  color: #353535;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* description */
+.description {
+  flex: 0 1 auto;
+  align-self: center;
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #353535;
+  max-width: calc(100% - 50px);
+}
+
+
+/* separator */
+hr.separator {
+  flex: 0 1 auto;
+  align-self: center;
+  display: block;
+  width: 170px;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #fab320;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+/* button */
+.btn {
+  display: block;
+  background-color: #f9b31f;
+  border-radius: 26px;
+  font-size: 14px;
+  font-family: "OpenSans Bold";
+  text-transform: uppercase;
+  padding: 20px 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.btn:hover, .btn:focus {
+  background-color: #f1a608;
+}
+
+.white {
+  color: #fff;
+}
+
+h1 {
+  font-weight: normal;
+}
