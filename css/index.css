@@ -167,7 +167,6 @@
   justify-content: center;
 }
 .result {
-  flex: 0 1 auto;
 }
 .result-value {
   font-family: "Oswald Medium";
