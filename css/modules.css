@@ -1,0 +1,145 @@
+/* color: #00c16a; */
+
+/* navigation bar */
+header.header {
+  color: #353535;
+  border-bottom: 1px solid #f6f6f6;
+}
+.nav > a {
+  color: #353535;
+}
+.logo {
+  height: 40px;
+  width: 133px;
+  background-image: url("../img/modules/logo-black.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+ul.menu li a {
+  font-family: "Oswald Medium";
+  font-size: 16px;
+  color: #353535;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* first view */
+.section1 {
+  height: 900px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.first-row {
+  max-width: calc(100% - 250px * 2);
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 120px;
+}
+@media screen and (max-width: 1600px) {
+  .first-row {
+    max-width: calc(100% - 100px * 2);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .first-row {
+    max-width: calc(100% - 50px * 2);
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first-row {
+    max-width: calc(100% - 30px * 2);
+    margin-top: 60px;
+  }
+}
+.title-and-description {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.nav-btn {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #353535;
+}
+@media screen and (max-width: 900px) {
+  .nav-btn-text {
+    display: none;
+  }
+}
+.nav-back::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 33px;
+  position: relative;
+  left: -15px;
+  bottom: -10px;
+  background-image: url("../img/modules/left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav-forward::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 33px;
+  position: relative;
+  right: -15px;
+  bottom: -10px;
+  background-image: url("../img/modules/right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* modules */
+.module-name {
+  font-family: "Oswald Medium";
+  font-size: 30px;
+  color: #00c16a;
+  margin: 0;
+  text-align: center;
+}
+.module-name-suffix {
+  color: #666565;
+}
+
+
+/* title */
+.title {
+  flex: 0 1 auto;
+  align-self: center;
+  margin: 0;
+}
+
+/* headers */
+.h1 {
+  font-family: "Oswald Medium";
+  font-size: 30px;
+  color: #353535;
+  text-transform: none;
+  text-align: center;
+}
+
+/* description */
+.description {
+  flex: 0 1 auto;
+  align-self: center;
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #353535;
+  max-width: 100%;
+}

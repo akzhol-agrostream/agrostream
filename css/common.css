@@ -48,19 +48,28 @@ header.header {
   color: #fff;
   width: inherit;
   max-width: inherit;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0, 0.05);
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0, 0.05);
 }
 nav.nav {
   flex: 0 1 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 200px);
-  padding: 50px 0 10px;
+  width: calc(100% - 100px);
+  padding: 30px 0 20px;
 }
 @media screen and (max-width: 1200px) {
   nav.nav {
-    width: calc(100% - 50px);
-    padding: 20px 0 0;
+    width: calc(100% - 40px);
+    padding: 10px 0 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav.nav {
+    width: calc(100% - 20px);
+    padding: 10px 0 10px;
   }
 }
 .nav > a {
@@ -82,7 +91,7 @@ ul.menu {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 950px) {
   ul.menu {
     display: none;
   }
@@ -99,8 +108,8 @@ ul.menu li:not(:first-child)::before {
   background-color: #fba320;
 }
 ul.menu li a {
-  font-family: "Oswald Regular";
-  font-size: 18px;
+  font-family: "Oswald Medium";
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -113,11 +122,11 @@ ul.menu li a.active {
 }
 .phone {
   display: flex;
-  width: 170px;
+  width: 150px;
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1150px) {
   nav .phone {
     display: none;
   }
@@ -133,8 +142,8 @@ ul.menu li a.active {
 }
 .phone > .number {
   flex: 0 1 auto;
-  font-family: "Oswald Regular";
-  font-size: 20px;
+  font-family: "Oswald Medium";
+  font-size: 16px;
 }
 
 
