@@ -36,13 +36,12 @@ ul.menu li a {
   box-sizing: border-box;
   padding-bottom: 250px;
 }
-.first-row {
+.nav-row {
   flex: 0 1 auto;
   max-width: calc(100% - 250px * 2);
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: flex-end;
   margin-top: 120px;
 }
