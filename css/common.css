@@ -377,3 +377,29 @@ hr.separator {
 h1 {
   font-weight: normal;
 }
+
+.form-btn-open {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-image: url("../img/plus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.form-btn-close {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-image: url("../img/plus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(45deg);
+}
