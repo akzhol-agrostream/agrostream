@@ -145,6 +145,68 @@ ul.menu li a.active {
   font-family: "Oswald Medium";
   font-size: 16px;
 }
+/* navigation bar inverse */
+header.header-inverse {
+  color: #353535;
+  border-bottom: 1px solid #f6f6f6;
+}
+header.header-inverse .nav > a {
+  color: #353535;
+}
+header.header-inverse .logo {
+  height: 40px;
+  width: 133px;
+  background-image: url("../img/modules/logo-black.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header.header-inverse ul.menu li a {
+  font-family: "Oswald Medium";
+  font-size: 16px;
+  color: #353535;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* navigation btn */
+.nav-btn {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #353535;
+}
+@media screen and (max-width: 900px) {
+  .nav-btn-text {
+    display: none;
+  }
+}
+.nav-back::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 33px;
+  position: relative;
+  left: -15px;
+  bottom: -10px;
+  background-image: url("../img/left-arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav-forward::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 33px;
+  position: relative;
+  right: -15px;
+  bottom: -10px;
+  background-image: url("../img/right-arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 
 /* footer */
