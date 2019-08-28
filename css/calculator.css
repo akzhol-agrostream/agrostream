@@ -26,16 +26,20 @@
 @media screen and (max-width: 1200px) {
   .nav-row {
     max-width: calc(100% - 50px * 2);
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 600px) {
   .nav-row {
     max-width: calc(100% - 30px * 2);
-    margin-top: 60px;
+    margin-top: 70px;
   }
 }
-
+@media screen and (max-width: 900px) {
+  .nav-btn-text {
+    display: inline;
+  }
+}
 
 /* forms */
 .forms {

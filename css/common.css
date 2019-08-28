@@ -147,6 +147,7 @@ ul.menu li a.active {
 }
 /* navigation bar inverse */
 header.header-inverse {
+  background-color: #fff;
   color: #353535;
   border-bottom: 1px solid #f6f6f6;
 }
