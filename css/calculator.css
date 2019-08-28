@@ -129,11 +129,11 @@
   flex: 0 1 auto;
   margin-bottom: 20px;
 }
-.form-item label {
+.form-item label.label {
   display: block;
   margin-bottom: 5px;
 }
-.form-item input {
+.form-item input:not([type="checkbox"]) {
   width: 100%;
   display: block;
   height: 50px;
@@ -152,25 +152,25 @@
   grid-gap: 0;
   align-items: flex-end;
 }
-.form-item-inline label {
+.form-item-inline label.label {
   display: inline-block;
   margin: 0;
   box-sizing: border-box;
   padding-right: 50px;
 }
 @media screen and (max-width: 900px) {
-  .form-item-inline label {
+  .form-item-inline label.label {
     padding-right: 10px;
   }
 }
-.form-item-inline input {
+.form-item-inline input:not([type="checkbox"]) {
   display: inline-block;
   width: 100px;
   height: 30px;
   padding: 5px;
   border-radius: 4px;
 }
-.form-item-inline input:not(:last-child) {
+.form-item-inline input:not([type="checkbox"]):not(:last-child) {
   margin-right: 5px;
 }
 
@@ -228,4 +228,43 @@
   max-width: 570px;
   width: calc(100% - 20px * 2);
   text-align: center;
+}
+
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+.tooltip:hover .tooltip-text {
+  display: block;
+}
+.tooltip-btn {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fab320;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0 0 2px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tooltip-text {
+  display: none;
+  position: absolute;
+  width: 400px;
+  left: 10px;
+  top: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  font-family: "OpenSans Regular";
+  font-size: 14px;
+  color: #353535;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0, 0.05);
+  z-index: 1;
 }
