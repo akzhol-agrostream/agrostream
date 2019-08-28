@@ -62,7 +62,7 @@
               <div class="form-title">Заполните личные данные</div>
               <div class="form-btn-close"></div>
               <div class="form-content">
-                <form>
+                <form id="form1">
                   <div class="form-item">
                     <label class="label" for="fullname">Как вас зовут? ФИО</label>
                     <input id="fullname" type="text" name="fullname" placeholder="">
@@ -92,7 +92,7 @@
               <div class="form-title">Ответьте пожалуйста на следующие вопросы</div>
               <div class="form-btn-close"></div>
               <div class="form-content">
-                <form>
+                <form id="form2">
                   <div class="form-item form-item-inline">
                     <label class="label" for="form2item1">Какова у вас посевная площадь?</label>
                     <div>
@@ -176,7 +176,7 @@
               <div class="form-title">Базовые допущения. Если вы с ними не согласны можете откорректировать</div>
               <div class="form-btn-close"></div>
               <div class="form-content">
-                <form>
+                <form id="form3">
                   <div class="form-item form-item-inline">
                     <label class="label" for="form3item1">Сколько камер видеонаблюдения вы хотели бы установить</label>
                     <div>
@@ -288,8 +288,8 @@
               <div class="form-title">Что из новых технологий вы бы хотели применить у себя, отметьте галочкой</div>
               <div class="form-btn-close"></div>
               <div class="form-content">
-                <form>
-                  <div class="form-item form-item-inline">
+                <form id="form4">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -304,8 +304,9 @@
                       <input id="form4item1" type="checkbox" name="form4item1" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item1result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -321,8 +322,9 @@
                       <input id="form4item2" type="checkbox" name="form4item2" placeholder="">
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item2result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -337,8 +339,9 @@
                       <input id="form4item3" type="checkbox" name="form4item3" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item3result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -354,8 +357,9 @@
                       <input id="form4item4" type="checkbox" name="form4item4" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item4result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -380,8 +384,9 @@
                       <input id="form4item5" type="checkbox" name="form4item5" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item5result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -406,8 +411,9 @@
                       <input id="form4item6" type="checkbox" name="form4item6" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item6result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -422,8 +428,9 @@
                       <input id="form4item7" type="checkbox" name="form4item7" placeholder="">
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item7result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -439,8 +446,9 @@
                       <input id="form4item8" type="checkbox" name="form4item8" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item8result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -464,8 +472,9 @@
                       <input id="form4item9" type="checkbox" name="form4item9" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item9result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -481,8 +490,9 @@
                       <input id="form4item10" type="checkbox" name="form4item10" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item10result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -497,8 +507,9 @@
                       <input id="form4item11" type="checkbox" name="form4item11" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item11result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -513,8 +524,9 @@
                       <input id="form4item12" type="checkbox" name="form4item12" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item12result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -529,8 +541,9 @@
                       <input id="form4item13" type="checkbox" name="form4item13" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item13result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -557,8 +570,9 @@
                       <input id="form4item14" type="checkbox" name="form4item14" placeholder="" checked>
                       <div class="control_indicator"></div>
                     </label>
+                    <div id="form4item14result" class="form-item-result"></div>
                   </div>
-                  <div class="form-item form-item-inline">
+                  <div class="form-item form-item-inline form-item-inline-result">
                     <div>
                       <div class="tooltip">
                         <div class="tooltip-btn">?</div>
@@ -571,13 +585,14 @@
                     <label class="control control-checkbox">
                       <span>300000 тг</span>
                     </label>
+                    <div id="form4item15result" class="form-item-result"></div>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="btn">Рассчитать</div>
+        <div id="calculate-btn" class="btn">Рассчитать</div>
         <div class="results">
           <div class="result">
             <div class="result-row result-row-total">

@@ -173,6 +173,18 @@
 .form-item-inline input:not([type="checkbox"]):not(:last-child) {
   margin-right: 5px;
 }
+.form-item-inline-result {
+  display: grid;
+  grid-template-columns: calc(100% - 170px - 150px) 170px 150px;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-gap: 0;
+  align-items: flex-end;
+}
+.form-item-result {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+}
 
 
 
