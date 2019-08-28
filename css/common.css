@@ -407,3 +407,8 @@ h1 {
   transform: rotate(45deg);
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .form-btn-open, .form-btn-close {
+    right: 10px;
+  }
+}
