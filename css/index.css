@@ -6,20 +6,14 @@
 }
 @media screen and (max-width: 1200px) {
   .section1 {
-    min-height: 700px;
+    height: 700px;
     height: auto;
     background-size: cover;
-    box-sizing: border-box;
-    padding: 100px 0 100px;
   }
 }
 @media screen and (max-width: 900px) {
   .section1 {
-    min-height: unset;
-    height: auto;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 100px 0 100px;
+    height: 350px;
   }
 }
 .section1item {
@@ -32,8 +26,7 @@
 }
 @media screen and (max-width: 1200px) {
   .section1item {
-    min-height: 700px;
-    height: auto;
+    height: 700px;
     background-size: cover;
     box-sizing: border-box;
     padding: 100px 0 100px;
@@ -41,21 +34,23 @@
 }
 @media screen and (max-width: 900px) {
   .section1item {
-    min-height: unset;
-    height: auto;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 100px 0 100px;
+    height: 350px;
   }
 }
 .section1item1 {
-  background-image: url("../img/bg1.jpg");
+  background-image: url("../img/section1bg1.jpg");
 }
 .section1item2 {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/section1bg2.jpg");
 }
 .section1item3 {
-  background-image: url("../img/bg1.jpg");
+  background-image: url("../img/section1bg3.jpg");
+}
+.section1item4 {
+  background-image: url("../img/section1bg4.jpg");
+}
+.section1item2 .main, .section1item3 .main, .section1item4 .main {
+  margin-top: 150px;
 }
 .main {
   flex: 0 1 auto;
@@ -68,7 +63,7 @@
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
-  .main {
+  .section1item2 .main, .section1item3 .main, .section1item4 .main , .main {
     max-width: 550px;
     line-height: 1;
     margin-top: 0;
@@ -83,6 +78,9 @@
   .main .h1 {
     font-size: 30px;
   }
+}
+.main .title {
+  margin-top: 0;
 }
 .main .description {
   font-size: 20px;
@@ -640,7 +638,7 @@
 /* form */
 .section10 {
   height: 800px;
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/section10bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -943,6 +941,23 @@ footer.footer {
   width: calc(100% - 50px * 2);
 }
 
+/* glide */
 ul.glide__slides {
   margin: 0;
+}
+.glide__arrow {
+  border: none;
+}
+@media screen and (max-width: 900px) {
+  .glide__arrow--left {
+    left: 1em;
+  }
+  .glide__arrow--right {
+    right: 1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .glide__arrow--left, .glide__arrow--right {
+    display: none;
+  }
 }
