@@ -3,6 +3,7 @@
     type: 'carousel',
     startAt: 0,
     gap: 0,
-    autoplay: 5000,
+    autoplay: 10000,
+    animationDuration: 1000,
   }).mount();
 })();
