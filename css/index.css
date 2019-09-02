@@ -762,6 +762,7 @@
   color: #000;
   cursor: pointer;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .news-item__more:hover, .news-item__more:focus {
   background-color: #f1a608;
