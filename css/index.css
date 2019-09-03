@@ -376,6 +376,8 @@
 }
 .partner {
   flex: 0 1 auto;
+  align-self: flex-end;
+  justify-self: center;
 }
 .partner1 {
   width: 108px;
@@ -402,8 +404,8 @@
   background-position: center center;
 }
 .partner4 {
-  width: 189px;
-  height: 56px;
+  width: 107px;
+  height: 87px;
   background-image: url("../img/partner4.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,11 +476,11 @@
 
 /* interface */
 .section8 {
-  height: 980px;
+  height: 1000px;
   background-image: url("../img/laptop_fullscreen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -30px;
+  background-position: center -40px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
